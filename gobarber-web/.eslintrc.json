@@ -29,6 +29,9 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "react/prop-types":"off",
+      "arrow-parens": ["error", "as-needed"],
+      "react/jsx-props-no-spreading": "off",
       "prettier/prettier": "error",
       "import/extensions": [
         "error",
