@@ -29,6 +29,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "object-curly-newline":"off",
       "react/prop-types":"off",
       "arrow-parens": ["error", "as-needed"],
       "react/jsx-props-no-spreading": "off",
