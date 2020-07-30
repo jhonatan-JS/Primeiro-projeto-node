@@ -29,6 +29,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "@typescript-eslint/no-empty-function":"off",
       "arrow-body-style":"off",
       "react/jsx-indent": "off",
       "@typescript-eslint/ban-types": "off",
