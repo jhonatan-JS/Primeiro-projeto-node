@@ -29,18 +29,27 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "no-unused-expressions":"off",
+      "arrow-body-style":"off",
+      "react/jsx-indent": "off",
+      "@typescript-eslint/ban-types": "off",
+      "react/jsx-no-undef": "off",
       "operator-linebreak": "off",
       "implicit-arrow-linebreak":"off",
-      "no-console":"off",
-      "no-unused-vars": "off",
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/ban-types":"off",
-      "object-curly-newline":"off",
-      "react/prop-types":"off",
-      "arrow-parens": ["error", "as-needed"],
-      "react/jsx-props-no-spreading": "off",
+      "arrow-parens":"off",
+      "object-curly-newline": "off",
+      "@typescript-eslint/expliciti-function-return-type": "off",
       "prettier/prettier": "error",
+      "react/jsx-one-expression-per-line": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/prop-types":"off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "no-unused-expressions": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
+      "import/prefer-default-export": "off",
+
+
+      "no-console":"off",
       "import/extensions": [
         "error",
         "ignorePackages",
@@ -48,11 +57,7 @@
           "ts": "never",
           "tsx": "never"
         }
-      ],
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-      "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-      "import/prefer-default-export": "off"
+      ]
     },
     "settings": {
       "import/resolver": {
