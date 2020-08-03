@@ -1324,11 +1324,19 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
 
-"@types/react-native@*", "@types/react-native@^0.63.1":
+"@types/react-native@*":
   version "0.63.3"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.63.3.tgz#a493cd565828ac256c5965260dc6e3b5c080fd84"
   integrity sha512-xly7YtTecQAMrg9PIih1OvLlZ7BJkLRcSrQclasjOPMzCQ3hmw0X09hqnlY+P1wg/rx5QTRip3dl+Vpfn3rSng==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-native@^0.60":
+  version "0.60.31"
+  resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.31.tgz#a7af12197f884ad8dd22cda2df9862ed72973ded"
+  integrity sha512-Y0Q+nv50KHnLL+jM0UH68gQQv7Wt6v2KuNepiHKwK1DoWGVd1oYun/GJCnvUje+/V8pMQQWW6QuBvHZz1pV7tQ==
+  dependencies:
+    "@types/prop-types" "*"
     "@types/react" "*"
 
 "@types/react-test-renderer@^16.9.2":
