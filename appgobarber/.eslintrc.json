@@ -29,6 +29,10 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "no-console":"off",
+      "react/jsx-props-no-spreading": "off",
+      "no-unused-vars": "off",
+      "react/prop-types": "off",
       "@typescript-eslint/no-unused-vars": "off",
       "prettier/prettier": "error",
       "react-hooks/rules-of-hooks": "error",
