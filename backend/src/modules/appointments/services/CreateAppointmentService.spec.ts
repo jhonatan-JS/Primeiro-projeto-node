@@ -1,3 +1,11 @@
-test('sum tow numbers', () => {
-    expect(1 + 2).toBe(3);
+import CreateAppointmentService from './CreateAppointmentService';
+
+describe('CreateAppointment', () => {
+    it('should be able to create a new appointment', () => {});
 });
+
+// describe('CreateAppointment', () => {
+//    it('should not be able to create tow appointment on the same time', () => {
+//        expect(1 + 2).toBe(3);
+//    });
+// });
