@@ -9,6 +9,7 @@ import AppError from '@shared/errors/AppError';
 import routes from './routes/index';
 
 import '@shared/infra/typeorm';
+import '@shared/container';
 
 const app = express();
 
@@ -25,7 +26,8 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
         });
     }
 
-    console.log(err);
+    console.log(err.message);
+    console.log(err.stack);
 
     return response.status(500).json({
         status: 'error',
