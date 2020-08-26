@@ -10,11 +10,11 @@ export default class ForgotPasswordController {
     ): Promise<Response> {
         const { email } = request.body;
 
-        const SendForgotPasswordEmail = container.resolve(
+        const sendForgotPasswordEmail = container.resolve(
             SendForgotPasswordEmailService,
         );
 
-        await SendForgotPasswordEmail.execute({
+        await sendForgotPasswordEmail.execute({
             email,
         });
 

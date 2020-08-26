@@ -8,8 +8,8 @@ import passwordRouter from '@modules/users/infra/http/routes/password.routes';
 const routes = Router();
 
 routes.use('/appointments', appointmentsRouter);
-routes.use('/sessions', sessionsRouter);
 routes.use('/users', usersRouter);
-routes.use('passwordRouter', passwordRouter);
+routes.use('/sessions', sessionsRouter);
+routes.use('/password', passwordRouter);
 
 export default routes;

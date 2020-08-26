@@ -22,7 +22,7 @@ export default class EtherealMailProvider implements IMailProvider {
 
     public async sendMail(to: string, body: string): Promise<void> {
         const message = await this.client.sendMail({
-            from: 'Equipe GoBarber Name <sender@example.com>',
+            from: 'Equipe GoBarber Name <equipe@gobarber.com.br>',
             to,
             subject: 'Recuperação de senha',
             text: body,
