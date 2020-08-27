@@ -4,7 +4,7 @@ import { isAfter, addHours } from 'date-fns';
 import AppError from '@shared/errors/AppError';
 import IUserRepository from '../repositories/IUsersRepository';
 import IUserTokensRepository from '../repositories/IUserTokensRepository';
-import IHashProvider from '../providers/HashProvider/models/IHashProviders';
+import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 // import User from '../infra/typeorm/entities/User';
 
