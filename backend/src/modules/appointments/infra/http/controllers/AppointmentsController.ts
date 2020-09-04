@@ -9,6 +9,7 @@ export default class AppointmentsController {
         response: Response,
     ): Promise<Response> {
         const user_id = request.user.id;
+
         const { provider_id, date } = request.body;
 
         const parsedDate = parseISO(date);
