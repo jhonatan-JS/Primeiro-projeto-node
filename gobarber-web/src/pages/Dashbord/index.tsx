@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { FiClock, FiPower } from 'react-icons/fi';
 import {
@@ -9,6 +9,8 @@ import {
   Content,
   Schadule,
   NextAppointment,
+  Section,
+  Appointment,
   Calendar,
 } from './styles';
 
@@ -16,6 +18,8 @@ import logoImg from '../../assets/logo.svg';
 import { useAuth } from '../../hooks/auth';
 
 const Dashboard: React.FC = () => {
+  const [sectedDate, setSelectedDate] = useState(new Date());
+
   const { signOut, user } = useAuth();
 
   return (
@@ -63,6 +67,64 @@ const Dashboard: React.FC = () => {
               </span>
             </div>
           </NextAppointment>
+
+          <Section>
+            <strong>Manhã</strong>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/62979297?s=460&u=9b5e6fb6cf022d78e38e18eb6bad997f5d6a3503&v=4"
+                  alt="Jhonatan Santos"
+                />
+
+                <strong>Jhonatan Santos</strong>
+              </div>
+            </Appointment>
+
+            <Appointment>
+              <span>
+                <FiClock />
+                08:00
+              </span>
+
+              <div>
+                <img
+                  src="https://avatars2.githubusercontent.com/u/62979297?s=460&u=9b5e6fb6cf022d78e38e18eb6bad997f5d6a3503&v=4"
+                  alt="Jhonatan Santos"
+                />
+
+                <strong>Jhonatan Santos</strong>
+              </div>
+            </Appointment>
+          </Section>
+
+          <Section>
+            <strong>Tarde</strong>
+
+            <div>
+              <Appointment>
+                <span>
+                  <FiClock />
+                  08:00
+                </span>
+
+                <div>
+                  <img
+                    src="https://avatars2.githubusercontent.com/u/62979297?s=460&u=9b5e6fb6cf022d78e38e18eb6bad997f5d6a3503&v=4"
+                    alt="Jhonatan Santos"
+                  />
+
+                  <strong>Jhonatan Santos</strong>
+                </div>
+              </Appointment>
+            </div>
+          </Section>
         </Schadule>
 
         <Calendar />
