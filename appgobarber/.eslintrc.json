@@ -29,6 +29,7 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "@typescript-eslint/no-empty-function": "off",
       "camelcase": "off",
       "no-unused-expressions": "off",
       "@typescript-eslint/ban-types":"off",
